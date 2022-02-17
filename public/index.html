@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+    <!-- Following is a custom fork of Cesium by Brian
+    <link rel="stylesheet" href="lib/Cesium/Widgets/widgets.css" />
+    <script src="lib/Cesium/Cesium.js"></script>
+    -->
+    <script>
+      window.CESIUM_BASE_URL = "%PUBLIC_URL%/lib/Cesium/"
+    </script>
+
+    <base href="%PUBLIC_URL%/" />
+    <title>Field Campaign Explorer</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- <header id="earthdata-tophat2" ></header>
+    <div id="earthdata-notification-banner" ></div> -->
+
+    <div id="root"></div>
+
+    <!-- Add the Earthdata Status App notifications -->
+    <script src="https://status.earthdata.nasa.gov/assets/banner_widget.js"></script>
+
+    <!-- Add and initialize the Earthdata Feedback notification -->
+    <script type="text/javascript" src="https://fbm.earthdata.nasa.gov/for/GHRC/feedback.js"></script>
+    <script type="text/javascript">
+      feedback.init({ showIcon: false })
+    </script>
+
+    <!-- Print the NASA tophat -->
+    <script
+      type="text/javascript"
+      src="https://cdn.earthdata.nasa.gov/tophat2/tophat2.js"
+      id="earthdata-tophat-script"
+      data-show-fbm="true"
+      data-show-status="true"
+      data-status-api-url="https://status.earthdata.nasa.gov/api/v1/notifications"
+      data-status-polling-interval="10"
+      data-current-daac="GHRC"
+    ></script>
+  </body>
+</html>

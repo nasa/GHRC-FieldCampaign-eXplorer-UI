@@ -1,0 +1,162 @@
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 100%;
+}
+
+.dock-tabpane>div {
+  margin: 20px;
+}
+
+.dock-tabpane:hover {
+  overflow: auto !important;
+}
+
+#tabCesium>div {
+  margin: 0px;
+}
+
+.top-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.dock-layout {
+  position: relative !important;
+  left: 10px !important;
+  right: 20px !important;
+  bottom: 10px !important;
+  top: 70px !important;
+  width: 99%;
+  height: 800px;
+}
+
+.MuiListSubheader-sticky {
+  text-align: center;
+  color: black !important;
+  font-size: 1rem !important;
+  position: inherit !important;
+}
+
+.MuiExpansionPanel-root.Mui-expanded {
+  margin: 20px !important;
+}
+
+.MuiBox-root {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.MuiCard-root {
+  margin-bottom: 10px;
+}
+
+ul.MuiList-root {
+  margin: auto;
+}
+
+.fcx-logo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.54);
+  width: 100%;
+  height: 100%;
+  z-index: 9990;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.MuiSnackbar-root {
+  z-index: 9991 !important;
+}
+
+.MuiAlert-standardError {
+  color: rgb(255, 240, 239) !important;
+  background-color: rgb(189, 34, 15) !important;
+}
+
+.MuiAlert-standardError .MuiAlert-icon {
+  color: white !important;
+}
+
+.gpuName {
+  z-index: 1000;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  color: yellow;
+  font-size: 11px;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fcx-logo img {
+  width: 400px;
+}
+
+.legend {
+  width: 100%;
+  height: 70px;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  padding: 3px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000;
+  background-color: #f8f8f8;
+  border-color: #cbd3da;
+  text-decoration: none;
+}
+
+button:focus, button.focus {
+  outline: 0;
+}
+
+button.disabled, button:disabled {
+  color: #888;
+  background-color: #f8f8f8;
+  border-color: #e9ecef;
+  opacity: 0.65;
+}
+
+.error-page {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: #484848;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-message {
+  font-size: 600%;
+  font-weight: bold;
+}
+
+.error-line1 {
+  font-size: 250%;
+  font-weight: bold;
+}

@@ -1,0 +1,81 @@
+{
+    "name": "fcx",
+    "version": "1.0.0",
+    "homepage": "/fcx/",
+    "start_url": ".",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.11.0",
+        "@material-ui/icons": "^4.9.1",
+        "@material-ui/lab": "^4.0.0-alpha.56",
+        "animate.css": "^4.1.0",
+        "animate.css-react": "^1.0.0",
+        "cesium": "^1.72.0",
+        "eventemitter3": "^4.0.4",
+        "history": "^5.0.0",
+        "interactjs": "^1.6.2",
+        "lodash": "4.17.21",
+        "material-ui": "^0.20.2",
+        "moment": "^2.27.0",
+        "rc-dock": "^2.6.0",
+        "react": "^16.8.4",
+        "react-animated-css": "^1.2.1",
+        "react-device-detect": "^1.13.1",
+        "react-dom": "^16.8.4",
+        "react-hot-loader": "^4.8.0",
+        "react-icons": "^3.10.0",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-transition-group": "^2.6.1",
+        "react-virtualized": "^9.21.2",
+        "redux": "^4.0.5",
+        "temporal-3d-tile": "^1.0.1",
+        "typescript": "^4.4.2"
+    },
+    "devDependencies": {
+        "@craco/craco": "^3.6.0",
+        "@hot-loader/react-dom": "^16.8.6",
+        "chai": "^4.3.4",
+        "craco-plugin-react-hot-reload": "^0.1.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "react-scripts": "^4.0.3",
+        "snyk": "^1.434.2"
+    },
+    "scripts": {
+        "start": "craco start  --no-cache",
+        "build": "craco build  --no-cache",
+        "test": "snyk test && craco test",
+        "test-craco": "craco test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "resolutions": {
+        "**/**/node-gyp": "^3.8.0",
+        "react-scripts/react-dev-utils/browserslist": "^4.16.5",
+        "react-scripts/react-dev-utils/immer": "^9.0.6",
+        "react-scripts/@svgr/webpack/@svgr/plugin-svgo/svgo/css-select/css-what": "^5.0.1",
+        "react-scripts/workbox-webpack-plugin/workbox-build/@surma/rollup-plugin-off-main-thread/ejs": "^3.1.6",
+        "react-scripts/webpack-dev-server/chokidar/glob-parent": "^5.1.2",
+        "react-scripts/webpack/watchpack/watchpack-chokidar2/chokidar/glob-parent": "^5.1.2",
+        "react-scripts/optimize-css-assets-webpack-plugin/cssnano/cssnano-preset-default/postcss-svgo/is-svg": "^4.3.0",
+        "react-scripts/postcss-safe-parser/postcss": "^8.2.12",
+        "react-scripts/resolve-url-loader/postcss": "^8.2.12",
+        "react-scripts/terser-webpack-plugin/cacache/tar": "^6.1.2",
+        "react-scripts/jest/@jest/core/jest-config/jest-environment-jsdom/jsdom/ws": "^7.4.6",
+        "react-scripts/webpack-dev-server/ws": "^7.4.6",
+        "material-ui/recompose/fbjs/isomorphic-fetch/node-fetch": "^2.6.1",
+        "@craco/craco/lodash.mergewith": "^4.6.2",
+        "snyk/snyk-nuget-plugin/jszip": "^3.7.0",
+        "snyk/proxy-agent/pac-proxy-agent/pac-resolver/netmask": "^2.0.1",
+        "snyk/tar": "^6.1.9"
+    }
+}

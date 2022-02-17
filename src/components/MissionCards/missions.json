@@ -1,0 +1,202 @@
+{
+  "missions": [
+    {
+      "name": "Altus Cumulus Electrification Study (ACES)",
+      "description": "Used the remotely-piloted Altus II aircraft to gather electrical, magnetic and optical measurements of thunderstorms.  This marked the first time a UAV was used to conduct lightning research. Naval Air Station Key West in Florida, August 2002.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/ACES/DATA101",
+      "image": "aces.png",
+      "path": "/aces",
+      "id": "aces",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Canadian CloudSat/CALIPSO Validation Project (C3VP)",
+      "description": "The Canadian CloudSat/CALIPSO Validation Project (C3VP) is part of the international CloudSat program. With C3VP, the Meteorological Service of Canada (MSC), Environment Canada, has been performing extensive validation of the satellite products in the context of the Canadian climate. October 2006 - April 2007.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/C3VP/DATA101",
+      "image": "c3vp.png",
+      "path": "/c3vp",
+      "id": "c3vp",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Convection And Moisture EXperiment 3 (CAMEX3)",
+      "description": "The third in the CAMEX series, collected data for research in tropical cyclone development, tracking, intensification, and landfalling impacts using NASA-funded aircraft and surface remote sensing instrumentation. Patrick Air Force Base, Florida from 6 August - 23 September, 1998.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/CAMEX-3/DATA101",
+      "image": "camex3.png",
+      "path": "/camex3",
+      "id": "camex3",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Convection And Moisture EXperiment 4 (CAMEX4)",
+      "description": "The fourth in the CAMEX series, flew instrumented DC-8 and ER-2 research airborne platforms over, through, and around selected hurricanes as they approached landfall in the Caribbean, Gulf of Mexico, and along the east coast of the United States. Jacksonville Naval Air Station, Florida, 16 August - 24 September, 2001.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/CAMEX-4/DATA101",
+      "image": "camex4.png",
+      "path": "/camex4",
+      "id": "camex4",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Geostationary Operational Environmental Satellite-R Post Launch Test (GOES-R-PLT)",
+      "description": "The GOES-R PLT field campaign was a collaborative mission to validate the Advanced Baseline Imager (ABI) and Geostationary Lightning Mapper (GLM) instruments aboard the GOES-R, now GOES-16, satellite.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GOESRPLT/DATA101",
+      "image": "goes-r-plt.png",
+      "path": "/goes-r-plt",
+      "id": "goes-r-plt",
+      "priority": 0,
+      "status": "Active"
+    },
+    {
+      "name": "GPM Cold-season Precipitation Experiment (GCPEx)",
+      "description": "Addressed shortcomings in GPM snowfall retrieval algorithm by collecting microphysical properties, associated remote sensing observations, and coordinated model simulations of precipitating snow. Ontario, Canada, Jan-Feb. 2012, partnered with Environment Canada.",
+      "dates": [],
+      "landingPageURL": "https://doi.org/10.5067/GPMGV/GCPEX/DATA101",
+      "image": "gcpex.png",
+      "path": "/gcpex",
+      "id": "gcpex",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Genesis and Rapid Intensification Processes (GRIP)",
+      "description": "NASA's DC-8 aircraft, the WB-57 aircraft, and the Global Hawk Unmanned Airborne System (UAS) were configured with a suite of in situ and remote sensing instruments to observe and characterize the lifecycle of hurricanes. The GRIP deployment was 15 August – 30 September 2010 with bases in Ft. Lauderdale, FL for the DC-8, at Houston, TX for the WB-57, and at NASA Dryden Flight Research Facility, CA for the Global Hawk.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GRIP/DATA101",
+      "image": "grip.png",
+      "path": "/grip",
+      "id": "grip",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Hurricane and Severe Storm Sentinel (HS3)",
+      "description": "Two unmanned Global Hawk aircraft carry instruments to monitor tropical storms and the surrounding environment to investigate the processes that underlie hurricane formation and intensity change in the Atlantic Ocean basin. Field measurements occurred for one month each during the hurricane seasons of 2012-2014.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/HS3/DATA101",
+      "image": "hs3.png",
+      "path": "/hs3",
+      "id": "hs3",
+      "priority": 2,
+      "status": "Inactive"
+    },
+    {
+      "name": "Hydrological Cycle in the Mediterranean Experiment (HyMeX)",
+      "description": "HyMeX aimed to improve the understanding, quantifying, and modeling of the hydrological cycle in the Mediterranean, with an emphasis on the predictability and evolution of extreme weather events, inter-annual to decadal (10 years) variability of the Mediterranean coupled system, and associated trends in the context of global change. NASA GPM-GV participation: Italy and France, Sept-Nov 2012.",
+      "dates": [],
+      "landingPageURL": "",
+      "image": "hymex.png",
+      "path": "/hymex",
+      "id": "hymex",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "International Collaborative Experiment for PyeongChang Olympic and Paralympics (ICE-POP) (ICE POP)",
+      "description": "Focus on the measurement, physics, and improved prediction of heavy orographic snow in the PyeongChang region of South Korea. February - March 2018.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/ICEPOP/DATA101",
+      "image": "ice-pop.png",
+      "path": "/ice-pop",
+      "id": "ice-pop",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Iowa Flood Studies (IFloodS)",
+      "description": "Studied characteristics, variability, and roles of rain and rainfall and other factors in flood genesis. Northeast Iowa, April-June 2013.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/IFLOODS/DATA101",
+      "image": "ifloods.png",
+      "path": "/ifloods",
+      "id": "ifloods",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Integrated Precipitation and Hydrology Experiment (IPHEx)",
+      "description": "Characterized warm season orographic precipitation regimes, and the relationship between precipitation regimes and hydrologic processes in regions of complex terrain. North Carolina, Apr-June, 2014.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/IPHEX/DATA101",
+      "image": "iphex.png",
+      "path": "/iphex",
+      "id": "iphex",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Light Precipitation Evaluation Experiment (LPVEx)",
+      "description": "Collected microphysical properties, associated remote sensing observations, and coordinated model simulations of high latitude precipitation systems. Helsinki, Finland, fall-winter 2010, partnered with CloudSat.",
+      "dates": [],
+      "landingPageURL": "https://doi.org/10.5067/GPMGV/LPVEX/DATA101",
+      "image": "lpvex.png",
+      "path": "/lpvex",
+      "id": "lpvex",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Mid-latitude Continental Convective Clouds Experiment (MC3E)",
+      "description": "Collaborative effort between the U.S. Department of Energy (DOE) Atmospheric Radiation Measurement (ARM) Climate Research Facility and NASA's GPM-GV program, to provide complete characterization of convective cloud systems, precipitation, and the environment. Ponca City, OK, April-May, 2011, partnered with DOE-ARM.",
+      "dates": [],
+      "landingPageURL": "https://doi.org/10.5067/GPMGV/MC3E/DATA101",
+      "image": "mc3e.png",
+      "path": "/mc3e",
+      "id": "mc3e",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "NASA African Monsoon Multidisciplinary Analyses (NAMMA)",
+      "description": "Characterized the evolution and structure of African Easterly Waves (AEWs) and Mesoscale Convective Systems over continental western Africa, and their associated impacts on regional water and energy budgets.  Cape Verde Islands, August 2006.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/NAMMA/DATA101",
+      "image": "namma.png",
+      "path": "/namma",
+      "id": "namma",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "Olympic Mountains Ground Validation Experiment (OLYMPEX)",
+      "description": "Hydrologic validation in extreme coastal and topographic gradients. Washington's Olympic Peninsula, Nov 2015-Feb 2016.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/OLYMPEX/DATA101",
+      "image": "olympex.png",
+      "path": "/olympex",
+      "id": "olympex",
+      "priority": 3,
+      "status": "Inactive"
+    },
+    {
+      "name": "Tropical Composition, Cloud and Climate Coupling (TC4)",
+      "description": "Investigated atmospheric structure, properties and processes in the tropical Eastern Pacific, using aircraft observations to validate observations from NASA's satellite 'A-Train'. Costa Rica, July 2007.",
+      "dates": [],
+      "landingPageURL": "",
+      "image": "tc4.png",
+      "path": "/tc4",
+      "id": "tc4",
+      "priority": 100,
+      "status": "Inactive"
+    },
+    {
+      "name": "The Tropical Cloud Systems and Processes (TCSP)",
+      "description": "12 NASA ER-2 science flights included missions to Hurricanes Dennis and Emily, Tropical Storm Gert, and an eastern Pacific mesoscale complex that may possibly have further developed into Tropical Storm Eugene. Costa Rica, July 1-27, 2005.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/TCSP/DATA101",
+      "image": "tcsp.png",
+      "path": "/tcsp",
+      "id": "tcsp",
+      "priority": 100,
+      "status": "Inactive"
+    }
+  ]
+}

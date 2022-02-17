@@ -1,0 +1,32 @@
+@import "../../node_modules/cesium/Build/Cesium/Widgets/widgets.css";
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+  background-color: transparent;
+}
+
+.main {
+  margin-top: -32px;
+}
+
+#earthdata-tophat2 {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 32px;
+}
