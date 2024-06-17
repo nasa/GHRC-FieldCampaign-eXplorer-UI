@@ -85,8 +85,8 @@
       "image": "hs3.png",
       "path": "/hs3",
       "id": "hs3",
-      "priority": 2,
-      "status": "Inactive"
+      "priority": 4,
+      "status": "Active"
     },
     {
       "name": "Hydrological Cycle in the Mediterranean Experiment (HyMeX)",
@@ -173,8 +173,19 @@
       "image": "olympex.png",
       "path": "/olympex",
       "id": "olympex",
+      "priority": 2,
+      "status": "Active"
+    },
+    {
+      "name": "Convective Processes Experiment – Aerosols & Winds (CPEX-AW)",
+      "description": "Conducting post-launch calibration and validation activities of the Atmospheric Dynamics Mission-Aeolus (ADM-AEOLUS) Earth observation wind Lidar satellite in St. Croix, US Virgin Islands, Aug 2021-Sep 2021.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/GPMGV/OLYMPEX/DATA101",
+      "image": "cpex-aw.png",
+      "path": "/cpexaw",
+      "id": "cpexaw",
       "priority": 3,
-      "status": "Inactive"
+      "status": "Active"
     },
     {
       "name": "Tropical Composition, Cloud and Climate Coupling (TC4)",
@@ -197,6 +208,17 @@
       "id": "tcsp",
       "priority": 100,
       "status": "Inactive"
+    },
+    {
+      "name": "Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS)",
+      "description": "IMPACTS will fly a complementary suite of remote sensing and in-situ instruments for three 6-week deployments (2020-2022) on NASA’s ER-2 high-altitude aircraft and P-3 cloud-sampling aircraft.",
+      "dates": [],
+      "landingPageURL": "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+      "image": "impacts.png",
+      "path": "/impacts",
+      "id": "impacts",
+      "priority": 1,
+      "status": "Active"
     }
   ]
 }

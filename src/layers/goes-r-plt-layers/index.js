@@ -3,7 +3,7 @@
   TODO: In future make this customizable as more field campaign data is prepared to be shown using FCX
  */
 
-  import { dataBaseUrl, abiBaseUrl, flightTrackBaseUrl } from "../config"
+  import { dataBaseUrl, abiBaseUrl, flightTrackBaseUrl } from "../../config"
 
   const layers_2017_05_17 = [
     {
@@ -1823,6 +1823,7 @@
       currentTime: { dayNumber: 2457855, secondsOfDay: 21126.767623933905 },
     },
   }
+  
   const goes_r_plt_campaign = {
     title: "GOES-R PLT Field Campaign",
     logo: `${dataBaseUrl}/fieldcampaign/goesrplt/logo/GOES-R_logo_small.png`,
@@ -1954,12 +1955,12 @@
       goesrpltsolma: { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/lma_legend.png`, color: "lightblue" },
       goesrpltcolma: { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/lma_legend.png`, color: "lightblue" },
       goesrpltnalma:  { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/lma_legend.png`, color: "lightblue" },
-      glm:            { url: `${process.env.PUBLIC_URL}/legends/glm_legend_activity.png`, color: "lightgreen" },
-      goesrpltfegs:   { url: `${process.env.PUBLIC_URL}/legends/fegs_legend.png`, color: "lightgreen" },
-      goesrpltlip:    { url: `${process.env.PUBLIC_URL}/legends/lip_legend.png`, color: "red" },
-      glm_intensity:  { url: `${process.env.PUBLIC_URL}/legends/glm_legend_intensity.png`, color: "yellow" },
-      isslis:         { url: `${process.env.PUBLIC_URL}/legends/isslis_legend.png`, color: "cyan" },
-      goesrpltoklma:   { url: `${process.env.PUBLIC_URL}/legends/goesrpltoklama_lma_legend.png`, color: "lightred" },
+      glm:            { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/glm_legend.png`, color: "lightgreen" },
+      goesrpltfegs:   { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/fegs_legend.png`, color: "lightgreen" },
+      goesrpltlip:    { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/lip_legend.png`, color: "red" },
+      glm_intensity:  { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/glm_legend.png`, color: "yellow" },
+      isslis:         { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/isslis_legend.png`, color: "cyan" },
+      goesrpltoklma:   { url: `${dataBaseUrl}/fieldcampaign/goesrplt/legend/lma_legend.png`, color: "lightred" },
     },
 
     defaultCamera: defaultCamera,

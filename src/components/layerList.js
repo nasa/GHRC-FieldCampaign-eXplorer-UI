@@ -21,6 +21,11 @@ import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import moment from "moment"
 import allActions from "../state/actions"
+import {BsCardImage} from 'react-icons/bs'
+
+import { IonWorldImageryStyle, ProviderViewModel, buildModuleUrl, createWorldImagery, UrlTemplateImageryProvider, Viewer, Ion, Cartesian3, Color, LabelStyle, VerticalOrigin, Cartesian2, defined, Entity, PinBuilder, SceneTransforms} from "cesium"
+import { Dock, viewer } from "./dock"
+import geoJson from '../data/chicago-parks2.json'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
+let imageToggle = false;
 export default function LayerList({ campaign }) {
   const classes = useStyles()
   const state = useSelector((state) => state)
@@ -40,7 +46,35 @@ export default function LayerList({ campaign }) {
     const layerItems = itemValue
 
     const layers = []
+
+    // special imageviewer layer for 2017-05-17 GOES-R field campaign
+    if (campaign.title === 'GOES-R PLT Field Campaign' && layerItems.date === '2017-05-17') {
+      layers.push((
+          <Card key={"primary-card-Image_viewer_2017-05-17"} variant="outlined">
+              <ListItem key={"primary-item-Image_viewer_2017-05-17"}>
+                <ListItemIcon><BsCardImage /></ListItemIcon>
+                <ListItemText id={`primary-list-label-Image_viewer_2017-05-17`} primary="Image Viewer" />
+                <ListItemSecondaryAction>
+                  <Switch
+                    edge="end"
+                    onChange={lightningImageViewerChangeHandler}
+                  />
+                </ListItemSecondaryAction>
+              </ListItem>
+              <ListItem key={"secondary-item-variable-Image_viewer_2017-05-17"}>
+                <ListItemText id={`secondary-list-label-Image_viewer_2017-05-17`} primary={
+                  <span style={{ fontSize: 12 }}>
+                    Toggle to enable/disable Markers
+                  </span>
+                }></ListItemText>
+              </ListItem>
+            </Card>
+        )
+      )
+    }
+
     for (const [layerIndex, layerValue] of layerItems.items.entries()) {
+      // icons and information gathering for layer card; needed for layerlist sidebar and layer legend
       let icon = <BsLayers />
 
       let legendImage
@@ -110,6 +144,7 @@ export default function LayerList({ campaign }) {
         layerVariableAvailability = <span style={{ fontSize: 12 }}>{layerAvailability}</span>
       }
 
+      // with the gathered information, populate and push the layer card to the layers array.
       layers.push(
         <Card key={"primary-card-" + layerIndex} variant="outlined">
           <ListItem key={"primary-item-" + layerIndex}>
@@ -167,4 +202,34 @@ export default function LayerList({ campaign }) {
   }
 
   return dates
+}
+
+const lightningImageViewerChangeHandler = (e) =>{
+  imageToggle = !imageToggle;
+  if(imageToggle){
+    geoJson.fieldCampaignImages.forEach((element)=>{
+      var pinBuilder = new PinBuilder();
+      //pinBuilder.fromMakiIconId("hospital", Color.RED, 48),
+      viewer.entities.add({
+        position : Cartesian3.fromDegrees(element.coordinates[0], element.coordinates[1]),
+        name: "imageViewer-" + element.id,
+        billboard : {
+          image : pinBuilder.fromMakiIconId('star', Color.GREEN, 48),
+          width : 32,
+          height : 32,
+        },
+        label : {
+          // text: element.id.toString(),
+          font : '14pt monospace',
+          style: LabelStyle.FILL_AND_OUTLINE,
+          outlineWidth : 2,
+          verticalOrigin : VerticalOrigin.TOP,
+          pixelOffset : new Cartesian2(1, 32)
+        }
+      });
+    })
+    console.log(viewer.entities)
+  }else{
+    viewer.entities.removeAll();
+  }
 }
