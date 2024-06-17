@@ -4,6 +4,10 @@ import moment from "moment"
 import { getLayer } from "../helpers/utils"
 import Timeline from "../customized-components/react-timeline-9000/src/timeline"
 import "../customized-components/react-timeline-9000/src/style.css"
+import { CLOCK_END_TIME_BUFFER, CLOCK_START_TIME_BUFFER } from '../constants/cesium/dates' 
+import { addTimeToISODate } from "../layers/utils/layerDates"
+import { viewer } from "./dock";
+import {JulianDate} from "cesium";
 
 //https://github.com/BHP-DevHub/react-timeline-9000
 //https://codesandbox.io/s/op9tg
@@ -30,17 +34,24 @@ function FcxTimeline({ campaign }) {
   for (const [selectedLayerIndex, selectedLayerValue] of state.selectedLayers.entries()) {
     let layer = getLayer(selectedLayerValue, campaign)
 
+    // If no start and end, take it through viewer.clock.
+    const viewerClock = viewer.clock;
+    let startDateJulian = viewerClock.startTime;
+    let startJSDate = JulianDate.toDate(startDateJulian);
+    let endDateJulian = viewerClock.stopTime;
+    let endJSDate = JulianDate.toDate(endDateJulian);
+
     if (!layerDate || layerDate !== layer.date) {
       let layerDate = layer.date
-      const viewerStart = `${layerDate}T00:00:00Z`
-      const viewerEnd = `${layerDate}T23:59:59Z`
+      const viewerStart = layer.start ? addTimeToISODate(layer.start, -CLOCK_START_TIME_BUFFER) : moment(startJSDate).format()
+      const viewerEnd = layer.end ? addTimeToISODate(layer.end, CLOCK_END_TIME_BUFFER) : moment(endJSDate).format()
       startDate = moment.utc(viewerStart)
       endDate = moment.utc(viewerEnd)
     }
 
     let color = "red"
-    let start = moment.utc(layer.start)
-    let end = moment.utc(layer.end)
+    let start = layer.start ? moment.utc(layer.start) : moment.utc(startJSDate)
+    let end = layer.end ? moment.utc(layer.end) : moment.utc(endJSDate)
 
     // Round to the nearest snap distance
     const roundedStartMinutes = Math.floor(start.minute() / snap) * snap

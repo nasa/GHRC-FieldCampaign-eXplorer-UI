@@ -719,6 +719,7 @@ export default class Timeline extends React.Component {
   }
 
   render() {
+    console.trace(startDate, endDate)
     const { groupOffset, showCursorTime, timebarFormat, componentId, groupTitleRenderer, shallowUpdateCheck, forceRedrawFunc, startDate, endDate } = this.props
 
     const divCssClass = `rct9k-timeline-div rct9k-id-${componentId}`

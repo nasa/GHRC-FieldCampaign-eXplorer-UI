@@ -1,0 +1,89 @@
+{
+      "fieldCampaignImages": [
+        {
+              "id":0,
+              "description":"",
+              "coordinates": [-97.366096698,35.976139932],
+              "imageURL":"https://www.youtube.com/watch?v=k5iTj6jRJzY",
+              "type":"video"
+        },
+        {
+              "id":1,
+              "description":"",
+              "coordinates": [-97.323335752,35.980253604],
+              "imageURL":"https://static.stacker.com/s3fs-public/styles/sar_screen_maximum_large/s3/2022-03/severe-weather.png",
+              "type":"image"
+        },
+        {
+              "id":2,
+              "description":"",
+              "coordinates": [-97.237378989,35.946273618],
+              "imageURL":"https://i0.wp.com/alabamanewscenter.com/wp-content/uploads/2019/02/Lightning-Feature.jpg?fit=640%2C360&ssl=1",
+              "type":"image"
+        },
+        {
+              "id":3,
+              "description":"",
+              "coordinates": [-97.718894431,34.555340867],
+              "imageURL":"https://discovery.sndimg.com/content/dam/images/discovery/editorial/Curiosity/2020/2/18/GettyImages-John-B-Mueller-Photography-117960753.jpg.rend.hgtvcom.406.406.suffix/1582846241624.jpeg",
+              "type":"image"
+        },
+        {
+              "id":4,
+              "description":"",
+              "coordinates": [-97.732114536,34.538735384],
+              "imageURL":"https://www.cbs42.com/wp-content/uploads/sites/81/2017/07/cullman-co-lightning-e1500923334525_29520440_ver1.0.jpg?w=1280",
+              "type":"image"
+        },
+        {
+              "id":5,
+              "description":"",
+              "coordinates": [-97.756163302,34.508635816],
+              "imageURL":"https://s-media-cache-ak0.pinimg.com/736x/4b/5f/d7/4b5fd7b3d46755e7a0c60a4f27187739.jpg",
+              "type":"image"
+        },
+        {
+              "id":6,
+              "description":"",
+              "coordinates": [-97.802441649,34.451175596],
+              "imageURL":"https://i.natgeofe.com/n/0d00dd65-ca95-4e41-bc5f-639ccca147ba/270.jpg?w=636&h=477",
+              "type":"image"
+        },
+        {
+              "id":7,
+              "description":"",
+              "coordinates": [-97.853339183,34.388453075],
+              "imageURL":"https://indiaclimatedialogue.net/wp-content/uploads/2017/09/Lightning1.jpg",
+              "type":"image"
+        },
+        {
+              "id":8,
+              "description":"",
+              "coordinates": [-97.955491195,34.261796560],
+              "imageURL":"https://i.redd.it/m8mdw4mxfsoz.jpg",
+              "type":"image"
+        },
+        {
+              "id":9,
+              "description":"",
+              "coordinates": [-98.050504071,34.125636741],
+              "imageURL":"https://ghrc.nsstc.nasa.gov/lightning/images/data/data_nalma.png",
+              "type":"image"
+        },
+        {
+              "id":10,
+              "description":"",
+              "coordinates": [-98.091889044,34.065956404],
+              "imageURL":"https://s3-ap-southeast-1.amazonaws.com/assets-powerstores-com/data/org/19721/media/img/source/edit/1961037_edit.jpg",
+              "type":"image"
+        },
+        {
+              "id":11,
+              "description":"",
+              "coordinates": [-98.092848118,34.064353295],
+              "imageURL":"https://i.pinimg.com/originals/00/30/c1/0030c180e2d07e8f76d466463d76158d.jpg",
+              "type":"image"
+        }
+      ]
+    }
+  

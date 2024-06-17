@@ -1,4 +1,16 @@
-const selectedLayers = (state = ["2017-05-17-abi-13", "2017-05-17-track15", "2017-05-17-glm", "2017-05-17-isslis", "2017-05-17-crs", "2017-05-17-fegs", "2017-05-17-lip"], action) => {
+// New way of writing reducers with the component itself,
+// and importing it here
+import {onTriggeredSubsettingTool} from "../../components/subsettingTool/redux";
+import {progressbarSubsettingTool} from "../../components/subsettingTool/redux/wsMessage";
+import {downloadListSubsettingTool} from "../../components/subsettingTool/redux/subsetDownloadList";
+import { histogramTool } from "../../components/instrumentsHistogram/redux";
+
+// Old way of writing the reducers in one place
+const selectedLayers = (state = ["a"], action) => {
+  if (action.type === "ADD_DEFAULT_SELECTED_LAYERS"){
+    return [...action.defaultSelectedLayers]
+  }
+
   if (action.type === "HANDLE_TOGGLE") {
     if (!state.some(ele => ele === action.layerId)) {
       return [...state, action.layerId]
@@ -42,4 +54,6 @@ const layerStatus = (state = { inProgress: [], loaded: [] }, action) => {
   return state
 }
 
-export { selectedLayers, layerStatus }
+const allReducers =  { selectedLayers, layerStatus, onTriggeredSubsettingTool, progressbarSubsettingTool, downloadListSubsettingTool, histogramTool }
+
+export default allReducers;
